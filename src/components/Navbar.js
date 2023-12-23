@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link ,BrowserRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Navbar(props) {
   return (
-    <BrowserRouter>
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
    <div className="container-fluid">
     <a className="navbar-brand" href="/">{props.title}</a>
@@ -33,7 +32,7 @@ export default function Navbar(props) {
     
   </div>
 </nav>
-</BrowserRouter>
+
   )
 }
  Navbar.prototypes={title: PropTypes.string}
