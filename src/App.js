@@ -35,9 +35,8 @@ function App() {
   return (
     <>
      <BrowserRouter>
-      <Alerts alert={alert} />
       <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
-      
+      <Alerts alert={alert} />
       <div className="container my-3">
         <Routes>          
           <Route path="/"
